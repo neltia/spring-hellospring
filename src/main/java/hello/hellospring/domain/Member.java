@@ -1,7 +1,16 @@
 package hello.hellospring.domain;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Member {
 
+    // @Id: pk 매핑
+    // 값이 자동 생성되는 컬럼 명시, 기본 키 생성을 DB에 위임하고 MySQL에서 많이 사용되는 IDENTITY 사용
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 
