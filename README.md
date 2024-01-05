@@ -28,7 +28,7 @@ java hello.hellospring.HelloSpringApplication
 </pre>
 
 ## 추가사항
-## DB:H2 'member' 테이블 생성
+### DB:H2 'member' 테이블 생성
 <pre>
 drop table if exists member CASCADE;
 create table member
